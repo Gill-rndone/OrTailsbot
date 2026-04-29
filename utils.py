@@ -21,14 +21,16 @@ def flip():
 # gets the average from flips
 def average(history):
     h_amount = 0
-    flip_amount = 0
+
     # Tally the amount of heads flips
     for x, i in enumerate(history):
         if i[0] == "Heads!":
             h_amount += 1
-        flip_amount = x
 
-    flip_amount += 1
+    flip_amount = len(history)
+    if flip_amount == 0:
+        results = [0, 0]
+        return results
 
     # Calculates and returns the percentages of results
     if h_amount != 0:
