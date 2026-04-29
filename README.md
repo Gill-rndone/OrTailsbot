@@ -3,7 +3,8 @@
 ### REQUIREMENTS:
 - Python 3.10+
 - pip 
-- sqlite3 
+- sqlite3
+- basic discord intent setup (read/write messages, etc.) 
 
 ### SETUP:
 ##### In project folder
